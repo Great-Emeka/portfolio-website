@@ -30,11 +30,23 @@ body{
     background-color: #f2f2fc;
     min-height: 100vh;
     display: block;
+    padding: 0 30px;
 }
 
 /* .main-content Rules */
 .main-content{
     padding-left: 270px;
+}
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.shadow-dark{
+    -webkit-box-shadow: 0 0 20px rgb(48,46,77,0.15);
+    box-shadow: 0 0 20px rgb(48,46,77,0.15);
 }
 
 /* Aside */
@@ -98,16 +110,38 @@ body{
     z-index: 11;
     border-radius: 5px;
     background: #fdf9ff;
-    display: -ms-flexbox;
-    display: flex;
+    /* display: -ms-flexbox;
+    display: flex; */
+    display: none;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .aside .nav-toggler span{
     height: 2px;
-    width: 16px;
+    width: 18px;
     display: inline-block;
+    position: relative;
+}
+
+.aside .nav-toggler span::before{
+    content: '';
+    height: 2px;
+    width: 18px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.aside .nav-toggler span::after{
+    content: '';
+    height: 2px;
+    width: 18px;
+    position: absolute;
+    top: 6px;
+    left: 0;
 }
 
 .aside .nav li{
@@ -119,11 +153,12 @@ body{
    font-weight: 600;
    color: #302e4d;
    text-decoration: none;
-   line-height: 45px;
+   line-height: 46px;
    display: block;
    border-bottom: 1px solid#e8dfec;
    -webkit-transition: all 0.3s ease;
    transition: all 0.3s ease;
+   text-transform: capitalize;
 
 }
 
@@ -142,3 +177,59 @@ body{
 }
 
 /* Home */
+.home{
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.home .intro{
+    text-align: center;
+}
+
+.home .intro img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 8px solid #ffffff;
+}
+
+.home .intro h1{
+    font-size: 30px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 20px 0 5px;
+}
+
+.home .intro p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 22px;
+    color: #504e70;
+}
+
+.home .intro .social-links{
+    margin-top: 25px;
+}
+
+.home .intro .social-links a{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+    margin:  0 4px;
+    border-radius: 50%;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.home .intro .social-links a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

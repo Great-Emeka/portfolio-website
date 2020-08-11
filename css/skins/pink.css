@@ -13,6 +13,9 @@
     color: #ec1839;
 }
 
-.aside .nav-toggler span{
+.aside .nav-toggler span,
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after,
+.home .intro .social-links a{
     background: #ec1839;
 }
