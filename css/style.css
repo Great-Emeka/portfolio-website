@@ -1,10 +1,17 @@
 /* Font Awesome Icon Import */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+
 /* General Style */
 body{
     margin: 0;
     line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 *{
@@ -40,6 +47,47 @@ body{
     top: 0;
     z-index: 10;
     border-right: 1px solid#e8dfec;
+    padding: 30px;
+}
+.aside .logo{
+    padding: 30px 0;
 }
 
+.aside .copyright-text{
+    background: #ededed;
+}
+.aside .logo a{
+    font-size: 40px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    background: #ededed;
+    position: relative;
+    padding: 0 10px;
+    line-height: 50px;
+}
+.aside .logo a::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.aside .logo a::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.aside .nav{
+    background: #ededed;
+    list-style: none;
+    margin: 80px 0;
+}
 /* Home */
