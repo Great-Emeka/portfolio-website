@@ -8,11 +8,14 @@
     border-bottom: 4px solid #ec1839;
 }
 
+.about .about-content .about-text h3 span,
 .aside .nav li a:hover,
 .aside .nav li a.active{
     color: #ec1839;
 }
 
+.section-title h2::before,
+.section-title h2::after,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
