@@ -105,6 +105,24 @@ body{
     box-shadow: 0 0 20px rgb(48,46,77,0.15);
 }
 
+.btn{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #ffffff;
+    border-radius: 40px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 .hidden{
     display: none !important;
 }
@@ -299,7 +317,6 @@ body{
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    /* background-color: red; */
 }
 
 .about .about-content .about-text{
@@ -320,4 +337,91 @@ body{
     line-height: 25px;
     color: #504e70;
     margin: 0;
+}
+
+.about .about-content .personal-info{
+    -ms-flex: 0 0 65%;
+    flex: 0 0 65%;
+    max-width: 65%;
+    margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-item{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p{
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+    padding: 16px 0;
+    color: #302e4d;
+    border-bottom: 1px solid#e8dfec;
+}
+
+.about .about-content .personal-info .info-item span{
+    font-weight: 400;
+    margin-left: 4px;
+    color: #504e70;
+    display: inline-block;
+}
+
+.about .about-content .personal-info .buttons{
+    margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.about .about-content .skills{
+    -ms-flex: 0 0 35%;
+    flex: 0 0 35%;
+    max-width: 35%;
+    margin-top: 40px;
+}
+
+.about .about-content .skills .skill-item{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .skills .skill-item h5{
+   line-height: 40px;
+   font-weight: 600;
+   font-size: 16px;
+   color: #302e4d;
+   text-transform: capitalize;
+   margin: 0; 
+}
+
+.about .about-content .skills .skill-item .progress{
+    background-color: #e3e3e3;
+    height: 8px;
+    width: 100%;
+    position: relative;
+}
+
+.about .about-content .skills .skill-item{
+    margin-bottom: 25px;
+}
+
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.about .about-content .skills .skill-item .skill-percent{
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    font-weight: 400;
+    color: #302e4d;
 }
