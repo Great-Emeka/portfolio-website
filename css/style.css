@@ -400,7 +400,7 @@ body{
 
 .about .about-content .skills .skill-item .progress{
     background-color: #e3e3e3;
-    height: 8px;
+    height: 7px;
     width: 100%;
     position: relative;
 }
@@ -425,3 +425,39 @@ body{
     font-weight: 400;
     color: #302e4d;
 }
+
+.about .about-content .education{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.about .about-content .experience{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 500%;
+    margin-top: 30px;
+}
+
+.about .about-content h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #302e4d
+}
+
+.about .about-content .timeline-box{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .timeline{
+    background: #fdf9ff;
+    padding: 30px 15px;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
