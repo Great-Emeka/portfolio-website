@@ -589,11 +589,16 @@ body{
 
 
 /* *********Rules for Portfolio Section************ */
+.portfolio .container{
+    padding-bottom: 40px;
+}
+
 .portfolio .portfolio-filter{
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .portfolio .portfolio-filter button{
@@ -611,4 +616,27 @@ body{
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
+.portfolio .portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item-inner{
+    border: 6px solid #fdf9ff;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .portfolio-item-inner .portfolio-img img{
+    width: 100%;
+    display: block;
+}
+
+.portfolio .portfolio-item .portfolio-info{
+   
+}
+
+
 
