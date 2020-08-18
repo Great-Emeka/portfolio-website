@@ -586,3 +586,29 @@ body{
     line-height: 25px;
     margin: 0;
 }
+
+
+/* *********Rules for Portfolio Section************ */
+.portfolio .portfolio-filter{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.portfolio .portfolio-filter button{
+    border: none;
+    background: transparent;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #302e4d;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    padding-bottom: 2px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
