@@ -765,8 +765,10 @@ body{
     height: auto;
     width: auto;
     max-width: 100%;
-    max-height: 430px;
+    max-height: 500px;
     cursor: pointer;
+    display: block;
+    padding: 40px 0 30px;
 }
 
 .lightbox .lightbox-content{
@@ -802,7 +804,7 @@ body{
 
 .lightbox .lightbox-content .lightbox-close{
     position: absolute;
-    top: -40px;
+    top: 0px;
     right: 0;
     height: 40px;
     width: 40px;
@@ -815,7 +817,7 @@ body{
 
 .lightbox .lightbox-content .lightbox-caption{
     position: absolute;
-    bottom: -20px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     display: -ms-flexbox;
@@ -825,6 +827,7 @@ body{
     font-size: 16px;
     color: #ffffff;
     font-weight: 500;
+    z-index: -1;
 }
 
 .lightbox .lightbox-controls .prev-item,
@@ -843,10 +846,16 @@ body{
     transition: all 0.3s ease;
 }
 
-.lightbox .lightbox-controls .prev-item:active,
-.lightbox .lightbox-controls .next-item:active{
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active{
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .lightbox .lightbox-controls .prev-item{

@@ -46,7 +46,7 @@
         <!--Main content-->
         <div class="main-content">
             <!--Home section-->
-            <section class="home section hidden">
+            <section class="home section">
                 <div class="container">
                     <div class="intro">
                         <img src="../images/about.png" alt="profile" class="shadow-dark" />
@@ -65,7 +65,7 @@
             <!--End of Home section-->
 
             <!--About section-->
-            <section class="about section hidden">
+            <section class="about section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -295,7 +295,7 @@
             <!--End of About section-->
 
             <!--Service Section-->
-            <section class="service section hidden">
+            <section class="service section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -491,15 +491,15 @@
     <div class="lightbox">
         <div class="lightbox-content">
             <div class="lightbox-close">&times;</div>
-            <img src="images/portfolio/2.png" class="lightbox-img" />
+            <img src="images/portfolio/2.png" class="lightbox-img" onclick="prevItem()" />
             <div class="lightbox-caption">
                 <div class="caption-text"></div>
                 <div class="lightbox-counter"></div>
             </div>
         </div>
         <div class="lightbox-controls">
-            <div class="prev-item"><i class="fa fa-angle-left"></i></div>
-            <div class="next-item"><i class="fa fa-angle-right"></i></div>
+            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
         </div>
     </div>
     <!--End of Lightbox-->

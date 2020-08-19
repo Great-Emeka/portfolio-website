@@ -37,7 +37,8 @@ const totalPortfolioItem = portfolioItems.length;
 //Portfolio LightBox
 const lightbox = document.querySelector(".lightbox"),
       lightboxImg = lightbox.querySelector(".lightbox-img"),
-      lightboxText = lightbox.querySelector(".caption-text")
+      lightboxClose = lightbox.querySelector(".lightbox-close"),
+      lightboxText = lightbox.querySelector(".caption-text"),
       lightboxCounter = lightbox.querySelector(".lightbox-counter");
 let itemIndex = 0;
 
@@ -47,6 +48,26 @@ for(let i=0; i<totalPortfolioItem; i++){
         changeItem();
         toggleLightbox();
     })
+}
+
+const nextItem = () => {
+    if(itemIndex === totalPortfolioItem-1){
+        itemIndex = 0;
+    }
+    else{
+        itemIndex++;
+    }
+    changeItem();
+}
+
+const prevItem = () => {
+    if(itemIndex === 0){
+        itemIndex = totalPortfolioItem-1;
+    }
+    else{
+        itemIndex--;
+    }
+    changeItem();
 }
 
 const toggleLightbox = () =>{
@@ -59,4 +80,11 @@ const changeItem = () =>{
     lightboxText.innerHTML = portfolioItems[itemIndex].querySelector("h4").innerHTML;
     lightboxCounter.innerHTML = (itemIndex +1) + " of " + totalPortfolioItem;
 };
+
+//Close Lightbox
+lightbox.addEventListener("click",function(){
+    if (event.target === lightboxClose ||event.target === lightbox){
+        toggleLightbox();
+    }
+})
 
