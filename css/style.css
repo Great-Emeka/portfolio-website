@@ -623,6 +623,45 @@ body{
     margin-bottom: 30px;
 }
 
+.portfolio .portfolio-item .hide{
+    display:none;
+}
+
+.portfolio .portfolio-item .show{
+    display:block;
+    animation: showItem .5s ease;
+}
+
+/* Animation to show portfolio Item */
+@-webkit-keyframes showItem{
+    0%{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes showItem{
+    0%{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* End of Animation to show portfolio Item */
+
 .portfolio .portfolio-item-inner{
     border: 6px solid #fdf9ff;
     border-radius: 10px;
@@ -736,6 +775,18 @@ body{
 
 .lightbox.open .lightbox-content{
     animation: lightboxImage .5s ease;
+}
+
+/* Animation on the lightbox Image when clicked to open */
+@-webkit-keyframes lightboxImage{
+    0%{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 @keyframes lightboxImage{
