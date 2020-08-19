@@ -698,4 +698,119 @@ body{
 }
 
 
+/* ******Lightbox rules******* */
+.lightbox{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.6);
+    z-index: 100;
+    /* display non makes it not to show, we show it on open */
+    display: none; 
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: zoom-out;
+    padding: 30px;
+}
+
+.lightbox.open{
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.lightbox .lightbox-content img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 430px;
+    cursor: pointer;
+}
+
+.lightbox .lightbox-content{
+    position: relative;
+}
+
+.lightbox.open .lightbox-content{
+    animation: lightboxImage .5s ease;
+}
+
+@keyframes lightboxImage{
+    0%{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.lightbox .lightbox-content .lightbox-close{
+    position: absolute;
+    top: -40px;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    font-size: 32px;
+    text-align: right;
+    color: #ffffff;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.lightbox .lightbox-content .lightbox-caption{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 55%;
+    margin-top: -20px;
+    z-index: 110;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.lightbox .lightbox-controls .prev-item{
+    left: 30px;
+}
+
+.lightbox .lightbox-controls .next-item{
+    right: 30px;
+}
+
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa{
+    font-size: 32px;
+    line-height: 40px;
+}
+
+
 
