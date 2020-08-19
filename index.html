@@ -371,10 +371,143 @@
                     </div>
             </section>
             <!--End of Services Section-->
+            <!--Portfolio Section-->
+            <section class="portfolio section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-filter padd-15">
+                            <button type="button" class="active" data-filter="all">All</button>
+                            <button type="button" data-filter="web-design">Web Design</button>
+                            <button type="button" data-filter="digital-marketing">Digital Marketing</button>
+                            <button type="button" data-filter="ui-ux">UI/UX</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--portfolio-item-->
+                        <div class="portfolio-item padd-15" data-category="web-design">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/1.png" alt="portfoilio" />
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Web Design</h4>
+                                    <div class="icon">
+                                       <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of portfolio-item-->
+                        <!--portfolio-item-->
+                        <div class="portfolio-item padd-15" data-category="digital-marketing">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/3.png" alt="portfoilio" />
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Digital Marketing</h4>
+                                    <div class="icon">
+                                       <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of portfolio-item-->
+                        <!--portfolio-item-->
+                        <div class="portfolio-item padd-15" data-category="ui-ux">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/2.png" alt="portfoilio" />
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>UI/UX</h4>
+                                    <div class="icon">
+                                       <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of portfolio-item-->
+                        <!--portfolio-item-->
+                        <div class="portfolio-item padd-15" data-category="web-design">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/1.png" alt="portfoilio" />
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Web Design</h4>
+                                    <div class="icon">
+                                       <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of portfolio-item-->
+                        <!--portfolio-item-->
+                        <div class="portfolio-item padd-15" data-category="web-design">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/4.jpg" alt="portfoilio" />
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Digital Marketing</h4>
+                                    <div class="icon">
+                                       <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of portfolio-item-->
+                        <!--portfolio-item-->
+                        <div class="portfolio-item padd-15" data-category="ui-ux">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/3.png" alt="portfoilio" />
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>UI/UX</h4>
+                                    <div class="icon">
+                                       <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of portfolio-item-->
+                    </div>
+                </div>
+            </section>
+            <!--End of Portfolio Section-->
         </div>
         <!--End of Main Content-->
     </main>
     <!--End of Main container-->
-</body>
 
+    <!--Lightbox-->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times;</div>
+            <img src="images/portfolio/2.png" class="lightbox-img" onclick="prevItem()" />
+            <div class="lightbox-caption">
+                <div class="caption-text"></div>
+                <div class="lightbox-counter"></div>
+            </div>
+        </div>
+        <div class="lightbox-controls">
+            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+        </div>
+    </div>
+    <!--End of Lightbox-->
+
+
+
+<!--Portfolio Js-->
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
 </html>
