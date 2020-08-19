@@ -623,11 +623,11 @@ body{
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item .hide{
+.portfolio .portfolio-item.hide{
     display:none;
 }
 
-.portfolio .portfolio-item .show{
+.portfolio .portfolio-item.show{
     display:block;
     animation: showItem .5s ease;
 }

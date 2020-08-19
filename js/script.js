@@ -15,8 +15,8 @@ const filterContainer = document.querySelector(".portfolio-filter"),
             this.classList.add("active"); //NB: this here is same as filterBtns[i]
             
             const filterValue = this.getAttribute("data-filter");
-            for (let k=0; k<totalPortfolioItem.length; k++) {
-                if(filterValue === portfolioItems[f].getAttribute("data-category")){
+            for (let k = 0; k < totalPortfolioItem; k++) {
+                if(filterValue === portfolioItems[k].getAttribute("data-category")){
                     portfolioItems[k].classList.remove("hide");
                     portfolioItems[k].classList.add("show");
                 }
