@@ -124,3 +124,8 @@ sr.reveal(".portfolio-item", { interval: 400 });
 
 /*SCROLL Blog*/
 sr.reveal(".blog-item", { interval: 200 });
+
+/*SCROLL CONTACT*/
+sr.reveal(".contact-info-item", { interval: 200 });
+sr.reveal(".form-group", { interval: 200 }); 
+sr.reveal(".message__btn", { delay: 500 });
