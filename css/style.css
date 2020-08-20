@@ -1061,8 +1061,22 @@ select {
   }
 }
 
+@media (max-width: 991px){
+  .blog .blog-item,
+  .portfolio .portfolio-item,
+  .service .service-item{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
 /* For Smaller screens */
 @media (max-width: 767px){
+  .contact .contact-info-item,
+  .contact .contact-form .col-6,
+  .blog .blog-item,
+  .service .service-item,
   .about .about-content .education,
   .about .about-content .experience,
   .about .about-content .skills,
@@ -1071,10 +1085,24 @@ select {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+  .portfolio .portfolio-filter button{
+    margin-bottom: 15px;
+  }
+  
   .about .about-content .personal-info .buttons .btn{
     margin-right: 5px;
     font-size: 15px;
     font-weight: 500;
     padding: 12px 30px;
+  }
+}
+
+@media (max-width: 575px){
+    .contact .contact-info-item,
+    .portfolio .portfolio-item{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
