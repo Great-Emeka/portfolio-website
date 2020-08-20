@@ -1,11 +1,13 @@
-/* Font Awesome Icon Import */
+
+/******************FONTAWESOME IMPORT********************/
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-/* Google fonts */
+/****************GOOGLE FONTS*****************/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
 
-/* General Style */
+
+/*****************GENERAL STYLE**********************/
 body {
   margin: 0;
   line-height: 1.5;
@@ -20,6 +22,7 @@ body {
   outline: none;
   text-decoration: none;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 ::before,
@@ -95,7 +98,8 @@ select {
   padding-left: 15px;
 }
 
-/* .main-content Rules */
+
+/***********MAIN CONTENT RULES****************/
 .main-content {
   padding-left: 270px;
 }
@@ -135,7 +139,8 @@ select {
   display: none !important;
 }
 
-/* Aside */
+
+/**********************ASIDE*****************************/
 .aside {
   width: 270px;
   background-color: #fdf9ff;
@@ -319,7 +324,8 @@ select {
   transform: scale(1.1);
 }
 
-/* About section rules */
+
+/*******************ABOUT SECTION**********************/
 .about .about-content {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -523,7 +529,7 @@ select {
   color: #504e70;
 }
 
-/* Rules for Services Section */
+/****************SERVICE SECTION************************/
 
 .service .container {
   padding-bottom: 40px;
@@ -591,7 +597,8 @@ select {
   margin: 0;
 }
 
-/* *********Rules for Portfolio Section************ */
+
+/****************PORTFOLIO SECTION*********************/
 .portfolio .container {
   padding-bottom: 40px;
 }
@@ -739,7 +746,8 @@ select {
   line-height: 40px;
 }
 
-/* ******Lightbox rules******* */
+
+/****************LIGHTBOX RULES*********************/
 .lightbox {
   position: fixed;
   left: 0;
@@ -748,7 +756,7 @@ select {
   height: 100%;
   background: rgb(0, 0, 0, 0.6);
   z-index: 100;
-  /* display non makes it not to show, we show it on open */
+  /* display: none makes it not to show, we show it on open */
   display: none;
   -ms-flex-align: center;
   align-items: center;
@@ -874,7 +882,8 @@ select {
   line-height: 40px;
 }
 
-/* *******Blog Section******* */
+
+/***************BLOG SECTION**********************/
 .blog .container {
   padding-bottom: 40px;
 }
@@ -954,7 +963,8 @@ select {
   font-weight: 600;
 }
 
-/* **********CONTACT SECTION************ */
+
+/**************CONTACT SECTION********************/
 .contact .contact-info-item {
   -ms-flex: 0 0 33.33;
   flex: 0 0 33.33%;
@@ -1033,4 +1043,38 @@ select {
 .contact .contact-form .btn {
   height: 50px;
   padding: 0 50px;
+}
+
+
+
+/***********************RESPONSIVENESS****************************/
+@media (max-width: 1199px){
+  .aside{
+    left: -270px;
+  }
+  .main-content{
+    padding-left: 0;
+  }
+  .about .about-content .personal-info .info-item span{
+    display: block;
+    margin-left: 0;
+  }
+}
+
+/* For Smaller screens */
+@media (max-width: 767px){
+  .about .about-content .education,
+  .about .about-content .experience,
+  .about .about-content .skills,
+  .about .about-content .personal-info{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .personal-info .buttons .btn{
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 30px;
+  }
 }
