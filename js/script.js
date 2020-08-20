@@ -126,6 +126,6 @@ sr.reveal(".portfolio-item", { interval: 400 });
 sr.reveal(".blog-item", { interval: 200 });
 
 /*SCROLL CONTACT*/
-sr.reveal(".contact-info-item", { interval: 200 });
+sr.reveal(".contact-info-item", { interval: 300 });
 sr.reveal(".form-group", { interval: 200 }); 
 sr.reveal(".message__btn", { delay: 500 });
