@@ -1049,12 +1049,12 @@ select {
 
 /***********************RESPONSIVENESS****************************/
 @media (max-width: 1199px){
-  .aside{
+  /* .aside{
     left: -270px;
   }
   .main-content{
     padding-left: 0;
-  }
+  } */
   .about .about-content .personal-info .info-item span{
     display: block;
     margin-left: 0;
