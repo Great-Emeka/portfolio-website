@@ -1109,6 +1109,5 @@ select {
   .about .about-content .personal-info .info-item span{
     /* display: inline-block; */
     font-size: 2.7vw;
-    background: red;
   }
 }
