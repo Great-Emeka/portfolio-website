@@ -46,18 +46,18 @@
         <!--Main content-->
         <div class="main-content">
             <!--Home section-->
-            <section class="home section hidden">
+            <section class="home section">
                 <div class="container">
                     <div class="intro">
-                        <img src="../images/about.png" alt="profile" class="shadow-dark" />
-                        <h1>Chimezie Emeka Great</h1>
-                        <p>I'm a frontend Engineer</p>
+                        <img class="home__img" src="../images/about.png" alt="profile" class="shadow-dark" />
+                        <h1 class="my_title1">Chimezie Emeka Great</h1>
+                        <p class="my_title2">I'm a frontend Engineer</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="home__social-icon"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="home__social-icon"><i class="fa fa-github"></i></a>
+                            <a href="#" class="home__social-icon"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="home__social-icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="home__social-icon"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
             <!--End of Home section-->
 
             <!--About section-->
-            <section class="about section hidden">
+            <section class="about section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -76,20 +76,20 @@
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>Hello I'm Great, a <span>Frontend Engineer</span></h3>
-                                    <p>I am a Unique frontend Web Developer and
+                                    <h3 class="about__subtitle">Hello I'm Great, a <span>Frontend Engineer</span></h3>
+                                    <p class="about__text">I am a Unique frontend Web Developer and
                                         I am so passionate and dedicated to my work. With a year plus experience
                                         as a web Developer working on real-life projects, I have acquired
                                         skills and knowledge necesary to add life to your ideas and bring your projects
                                         to a success.
                                         I enjoy every step of the design, from discussion and collaboration.</p>
-                                    <p style="margin-top: 5px;">I am also a Digital marketer, social media Manager and
+                                    <p style="margin-top: 5px;" class="about__text2">I am also a Digital marketer, social media Manager and
                                         occational blogger. </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="personal-info padd-15">
-                                    <div class="row">
+                                    <div class="row about__bio">
                                         <div class="info-item padd-15">
                                             <p>
                                                 Birthday: <span>23 April 1993</span>
@@ -138,8 +138,8 @@
                                     </div>
                                     <div class="row">
                                           <div class="buttons padd-15">
-                                              <a href="#" class="btn">Download CV</a>
-                                              <a href="#" class="btn">Hire Me</a>
+                                              <a href="#" class="btn about__btn">Download CV</a>
+                                              <a href="#" class="btn about__btn">Hire Me</a>
                                           </div>  
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@
                             </div>
                             <div class="row">
                                 <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
+                                    <h3 class="title education_title">Education</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
@@ -236,7 +236,7 @@
                                     </div>
                                 </div>
                                 <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
+                                    <h3 class="title education_title">Experience</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
@@ -295,7 +295,7 @@
             <!--End of About section-->
 
             <!--Service Section-->
-            <section class="service section hidden">
+            <section class="service section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -373,7 +373,7 @@
             <!--End of Services Section-->
 
             <!--Portfolio Section-->
-            <section class="portfolio section hidden">
+            <section class="portfolio section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -382,10 +382,10 @@
                     </div>
                     <div class="row">
                         <div class="portfolio-filter padd-15">
-                            <button type="button" class="active" data-filter="all">All</button>
-                            <button type="button" data-filter="web-design">Web Design</button>
-                            <button type="button" data-filter="digital-marketing">Digital Marketing</button>
-                            <button type="button" data-filter="ui-ux">UI/UX</button>
+                            <button type="button" class="active portfoilio__filter" data-filter="all">All</button>
+                            <button type="button" class="portfoilio__filter" data-filter="web-design">Web Design</button>
+                            <button type="button" class="portfoilio__filter" data-filter="digital-marketing">Digital Marketing</button>
+                            <button type="button" class="portfoilio__filter" data-filter="ui-ux">UI/UX</button>
                         </div>
                     </div>
                     <div class="row">
@@ -586,6 +586,8 @@
     <!--End of Lightbox-->
 
 
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <!--Portfolio Js-->
 <script type="text/javascript" src="js/script.js"></script>

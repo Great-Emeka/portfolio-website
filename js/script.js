@@ -88,3 +88,44 @@ lightbox.addEventListener("click",function(){
     }
 })
 
+
+
+
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+
+/*SCROLL HOME*/
+sr.reveal('.my_title1',{}); 
+sr.reveal('.my_title2',{delay: 200}); 
+sr.reveal('.home__img',{delay: 400}); 
+sr.reveal('.home__social-icon',{ interval: 200}); 
+
+/*SCROLL ABOUT*/
+sr.reveal('.about__img',{}); 
+sr.reveal('.about__subtitle',{delay: 400}); 
+sr.reveal('.about__text',{delay: 500});
+sr.reveal('.about__text2',{delay: 550});
+sr.reveal('.about__bio',{delay: 500});
+sr.reveal('.education_title',{}); 
+sr.reveal('.skill-item',{ interval: 200});
+sr.reveal('.about__btn',{ interval: 200});
+sr.reveal('.timeline-box',{ interval: 100});
+
+/*SCROLL SERVICES*/
+sr.reveal('.section-title',{}); 
+sr.reveal('.service-item',{interval: 300}); 
+sr.reveal('.skills__img',{delay: 600});
+
+/*SCROLL PORTFOLIO*/
+sr.reveal('.portfoilio__filter',{interval: 200}); 
+sr.reveal('.portfolio-item',{interval: 400});
+
+/*SCROLL Blog*/
+sr.reveal('.blog-item',{interval: 200}); 
+
