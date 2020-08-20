@@ -8,6 +8,7 @@
     border-bottom: 4px solid #ec1839;
 }
 
+.blog .blog-item-inner .blog-info .blog-tags a,
 .lightbox .lightbox-controls .prev-item .fa,
 .lightbox .lightbox-controls .next-item .fa,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
@@ -19,6 +20,7 @@
     color: #ec1839;
 }
 
+.blog .blog-item-inner .blog-img .blog-date,
 .service .service-item .service-item-inner:hover .icon,
 .about .about-content .timeline-item::before,
 .about .about-content .timeline .circle-dot,
