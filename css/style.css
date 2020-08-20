@@ -22,7 +22,6 @@ body {
   outline: none;
   text-decoration: none;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 
 ::before,
@@ -1096,6 +1095,7 @@ select {
     font-weight: 500;
     padding: 12px 30px;
   }
+
 }
 
 @media (max-width: 575px){
@@ -1104,5 +1104,11 @@ select {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .about .about-content .personal-info .info-item span{
+    /* display: inline-block; */
+    font-size: 2.7vw;
+    background: red;
   }
 }
