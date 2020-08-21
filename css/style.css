@@ -1055,8 +1055,13 @@ body.dark .aside{
   background: #222222;
 }
 
+body.dark .aside .logo a,
 body.dark .aside .nav li a{
   color: #ffffff;
+}
+
+body.dark .aside .nav li a{
+  border-color: #393939;
 }
 
 

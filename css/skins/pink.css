@@ -17,7 +17,9 @@
 .service .service-item .service-item-inner .icon .fa,
 .about .about-content .about-text h3 span,
 .aside .nav li a:hover,
-.aside .nav li a.active {
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active,
+.aside .nav li a.active{
   color: #ec1839;
 }
 
