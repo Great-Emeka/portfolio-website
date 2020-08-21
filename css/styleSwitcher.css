@@ -1,0 +1,40 @@
+
+
+.style-switcher{
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #d4d4e3;
+    border-radius: none;
+}
+
+.style-switcher h5{
+    font-size: 16px;
+    color: #302e4d;
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e8dfec;
+}
+
+.style-switcher ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.style-switcher ul li{
+    display: inline-block;
+}
+
+.style-switcher ul li a{
+    height: 30px;
+    width: 30px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 2px;
+}

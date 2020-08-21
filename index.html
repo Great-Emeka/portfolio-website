@@ -9,6 +9,14 @@
     <!--Css files-->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/skins/pink.css" type="text/css" />
+
+    <!--Live Style Switcher-->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled />
+    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled />
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled />
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled />
+    <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled />
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css" />
 </head>
 
 <body>
@@ -676,12 +684,32 @@
     </div>
     <!--End of Lightbox-->
 
+    <!--LIVE STYLE SWITCHER-->
+    <div class="style-switcher">
+        <h5> Style Switcher</h5>
+        <ul>
+            <li><a href="#" title="pink" style="background: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+            <li><a href="#" title="blue" style="background: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="#" title="orange" style="background: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="#" title="yellow" style="background: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+            <li><a href="#" title="green" style="background: #72b626;" onclick="setActiveStyle('green')"></a></li>
+        </ul>
+    </div>
+    <!--END OF LIVE STYLE SWITCHER-->
+
+
+
+
+
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--PORTFOLIO JAVASCRIPT-->
     <script type="text/javascript" src="js/script.js"></script>
+
+    <!--LIVE STYLE SWITCHER JAVASCRIPT-->
+    <script type="text/javascript" src="js/styleSwitcher.js"></script>
 
 </body>
 
