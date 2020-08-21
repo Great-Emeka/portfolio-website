@@ -97,7 +97,7 @@ const sr = ScrollReveal({
 });
 
 /*SCROLL HOME*/
-sr.reveal(".my_title1", {});
+sr.reveal(".my_title1", { interval: 200 });
 sr.reveal(".my_title2", { delay: 200 });
 sr.reveal(".home__img", { delay: 400 });
 sr.reveal(".home__social-icon", { interval: 200 });

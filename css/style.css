@@ -1110,4 +1110,8 @@ select {
     /* display: inline-block; */
     font-size: 2.7vw;
   }
+
+  .home .intro h1{
+    font-size: 25px;
+  }
 }
