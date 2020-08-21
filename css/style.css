@@ -1045,6 +1045,20 @@ select {
 }
 
 
+/***********************DARK BODY SKIN****************************/
+
+body.dark .section{
+  background: #151515;
+}
+
+body.dark .aside{
+  background: #222222;
+}
+
+body.dark .aside .nav li a{
+  color: #ffffff;
+}
+
 
 /***********************RESPONSIVENESS****************************/
 @media (max-width: 1199px){
