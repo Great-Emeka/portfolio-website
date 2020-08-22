@@ -243,7 +243,7 @@ select {
   cursor: pointer;
   position: fixed;
   left: 300px;
-  top: 30px;
+  top: 20px;
   z-index: 11;
   border-radius: 5px;
   background: #fdf9ff;
@@ -1181,12 +1181,14 @@ body.dark .shadow-dark{
 
 /***********************RESPONSIVENESS****************************/
 @media (max-width: 1199px){
+  .section .container{
+    padding-top: 70px;
+  }
+
   .aside .nav-toggler{
     display: -ms-flexbox;
     display: flex;
     left: 30px;
-    top: 20px;
-
   }
 
   .aside .nav-toggler.open{
