@@ -87,8 +87,45 @@ lightbox.addEventListener("click", function () {
 });
 
 
+/*===== ASIDE SIDE NAV =====*/
+const nav = document.querySelector(".nav"),
+      navList = nav.querySelectorAll("li"),
+      totalNavList = navList.length,
+      allSection = document.querySelectorAll(".section"),
+      totalSection = allSection.length;
+  
+  for (let i=0; i<totalNavList; i++) {
+    const a = navList[i].querySelector("a");
+    a.addEventListener("click",function(){
+      //remove back-section class
+      for (let i=0; i<totalSection; i++) {
+        allSection[i].classList.remove("back-section");
+      }
 
-/*===== SCROLL REVEAL ANIMATION =====*/
+      for (let j=0; j<totalNavList; j++){
+        if(navList[j].querySelector("a").classList.contains("active")){
+         //add back-section class
+          allSection[j].classList.add("back-section");
+        }
+        navList[j].querySelector("a").classList.remove("active");
+      }
+
+        this.classList.add("active");
+        showSection(this);
+    });
+  }
+        
+function showSection(element){
+    for (let i=0; i<totalSection; i++) {
+      allSection[i].classList.remove("active");
+    }
+    const target = element.getAttribute("href").split("#")[1];
+    document.querySelector("#"+target).classList.add("active");
+
+}
+
+
+/*=========SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
@@ -129,3 +166,4 @@ sr.reveal(".blog-item", { interval: 200 });
 sr.reveal(".contact-info-item", { interval: 300 });
 sr.reveal(".form-group", { interval: 200 }); 
 sr.reveal(".message__btn", { delay: 500 });
+
