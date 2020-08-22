@@ -124,6 +124,19 @@ function showSection(element){
 
 }
 
+//Nav Toggling
+const navTogglerBtn = document.querySelector(".nav-toggler");
+const aside = document.querySelector(".aside");
+    
+navTogglerBtn.addEventListener("click",() =>{
+  asideSectionTogglerBtn();
+})
+
+asideSectionTogglerBtn = () =>{
+  aside.classList.toggle("open");
+  navTogglerBtn.classList.toggle("open");
+}
+
 
 /*=========SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({

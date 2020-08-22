@@ -193,6 +193,8 @@ select {
   z-index: 10;
   border-right: 1px solid#e8dfec;
   padding: 30px;
+  -webkit-transition: all 1s ease;;
+  transition: all 1s ease;
 }
 .aside .logo {
   padding: 30px 0;
@@ -1155,12 +1157,30 @@ body.dark .shadow-dark{
 
 /***********************RESPONSIVENESS****************************/
 @media (max-width: 1199px){
+  .aside .nav-toggler{
+    display: -ms-flexbox;
+    display: flex;
+    left: 30px;
+    top: 20px;
+
+  }
+
+  .aside .nav-toggler.open{
+    left: 270px;
+  }
+
   .aside{
     left: -270px;
   }
-  .main-content{
-    padding-left: 0;
+
+  .aside.open{
+    left: 0px;
   }
+
+  .section{
+    left: 0;
+  }
+
   .about .about-content .personal-info .info-item span{
     display: block;
     margin-left: 0;
