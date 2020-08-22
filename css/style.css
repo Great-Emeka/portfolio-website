@@ -48,6 +48,8 @@ select {
   opacity: 1;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 
 .section.back-section{
@@ -193,8 +195,8 @@ select {
   z-index: 10;
   border-right: 1px solid#e8dfec;
   padding: 30px;
-  -webkit-transition: all 1s ease;;
-  transition: all 1s ease;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 .aside .logo {
   padding: 30px 0;
@@ -252,6 +254,8 @@ select {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 
 .aside .nav-toggler span {
@@ -261,6 +265,10 @@ select {
   position: relative;
 }
 
+.aside .nav-toggler.open span {
+  background: transparent;
+}
+
 .aside .nav-toggler span::before {
   content: "";
   height: 2px;
@@ -268,6 +276,20 @@ select {
   position: absolute;
   top: -6px;
   left: 0;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
+}
+
+.aside .nav-toggler.open span::before{
+  -webkit-transform:rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.aside .nav-toggler.open span::after{
+  -webkit-transform:rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0px;
 }
 
 .aside .nav-toggler span::after {
@@ -277,6 +299,8 @@ select {
   position: absolute;
   top: 6px;
   left: 0;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 
 .aside .nav li {
@@ -1179,6 +1203,10 @@ body.dark .shadow-dark{
 
   .section{
     left: 0;
+  }
+
+  .section.open{
+    left: 270px;
   }
 
   .about .about-content .personal-info .info-item span{
