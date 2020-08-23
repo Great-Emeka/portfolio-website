@@ -198,9 +198,11 @@ select {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-.preloader.opacitiy-0{
+.preloader.opacity-0{
   opacity: 0;
 }
 
@@ -248,6 +250,7 @@ select {
   left: 0;
   top: 0;
   z-index: 10;
+  overflow-y: auto;
   border-right: 1px solid#e8dfec;
   padding: 30px;
   -webkit-transition: all 0.4s ease;;
