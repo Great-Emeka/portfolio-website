@@ -37,9 +37,54 @@ select {
 .section {
   background-color: #f2f2fc;
   min-height: 100vh;
-  /* width: 100vw; */
   display: block;
   padding: 0 30px;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
+}
+
+.section.back-section{
+  z-index: 1;
+}
+
+.section.active{
+  opacity: 1;
+  z-index: 2;
+  -webkit-animation: slideSection 1s ease;
+  animation: slideSection 1s ease;
+}
+
+@-webkit-keyframes slideSection {
+  0%{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideSection {
+  0%{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 .section .container {
@@ -99,9 +144,9 @@ select {
 
 
 /***********MAIN CONTENT RULES****************/
-.main-content {
+/* .main-content {
   padding-left: 270px;
-}
+} */
 
 .container {
   max-width: 1100px;
@@ -138,6 +183,63 @@ select {
   display: none !important;
 }
 
+/**********************PRELOADER*****************************/
+.preloader{
+  background: #222222;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 150;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.preloader.opacity-0{
+  opacity: 0;
+}
+
+.preloader .loader{
+  height: 40px;
+  width: 40px;
+  border: 4px solid #e3e3e3;
+  border-radius: 50%;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  -webkit-animation: spin 2s linear infinite;;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
 
 /**********************ASIDE*****************************/
 .aside {
@@ -148,8 +250,11 @@ select {
   left: 0;
   top: 0;
   z-index: 10;
+  overflow-y: auto;
   border-right: 1px solid#e8dfec;
   padding: 30px;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 .aside .logo {
   padding: 30px 0;
@@ -196,7 +301,7 @@ select {
   cursor: pointer;
   position: fixed;
   left: 300px;
-  top: 30px;
+  top: 20px;
   z-index: 11;
   border-radius: 5px;
   background: #fdf9ff;
@@ -207,6 +312,8 @@ select {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 
 .aside .nav-toggler span {
@@ -216,6 +323,10 @@ select {
   position: relative;
 }
 
+.aside .nav-toggler.open span {
+  background: transparent;
+}
+
 .aside .nav-toggler span::before {
   content: "";
   height: 2px;
@@ -223,6 +334,20 @@ select {
   position: absolute;
   top: -6px;
   left: 0;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
+}
+
+.aside .nav-toggler.open span::before{
+  -webkit-transform:rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.aside .nav-toggler.open span::after{
+  -webkit-transform:rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0px;
 }
 
 .aside .nav-toggler span::after {
@@ -232,6 +357,8 @@ select {
   position: absolute;
   top: 6px;
   left: 0;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 
 .aside .nav li {
@@ -1112,12 +1239,36 @@ body.dark .shadow-dark{
 
 /***********************RESPONSIVENESS****************************/
 @media (max-width: 1199px){
+  .section .container{
+    padding-top: 70px;
+  }
+
+  .aside .nav-toggler{
+    display: -ms-flexbox;
+    display: flex;
+    left: 30px;
+  }
+
+  .aside .nav-toggler.open{
+    left: 270px;
+  }
+
   .aside{
     left: -270px;
   }
-  .main-content{
-    padding-left: 0;
+
+  .aside.open{
+    left: 0px;
   }
+
+  .section{
+    left: 0;
+  }
+
+  .section.open{
+    left: 270px;
+  }
+
   .about .about-content .personal-info .info-item span{
     display: block;
     margin-left: 0;

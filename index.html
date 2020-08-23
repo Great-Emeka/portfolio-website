@@ -13,20 +13,29 @@
     <!--Live Style Switcher-->
     <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled />
     <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled />
-    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled />
-    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled />
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css"
+        disabled />
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css"
+        disabled />
     <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled />
     <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css" />
 </head>
 
 <body>
+    <!--Pre-Loader feature-->
+    <div class="preloader">
+        <div class="loader">
+        </div>
+    </div>
+    <!--End of Pre-Loader feature-->
+
     <!--Main container-->
     <main class="main-container">
         <!--Aside-->
         <div class="aside">
             <!--Logo-->
             <div class="logo">
-                <a href="#">Great</a>
+                <a href="#home">Great</a>
             </div>
             <!--Navbar Toggler btn-->
             <div class="nav-toggler">
@@ -36,12 +45,12 @@
             <!--Nav-->
             <nav>
                 <ul class="nav">
-                    <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                    <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                    <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                    <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                    <li><a href="#"><i class="fa fa-envelope"></i>Blog</a></li>
-                    <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#blog"><i class="fa fa-envelope"></i>Blog</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
                 </ul>
             </nav>
             <!--End of Nav-->
@@ -54,7 +63,7 @@
         <!--Main content-->
         <div class="main-content">
             <!--Home section-->
-            <section class="home section">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="intro">
                         <img class="home__img" src="../images/about.png" alt="profile" class="shadow-dark" />
@@ -66,6 +75,8 @@
                             <a href="#" class="home__social-icon"><i class="fa fa-linkedin"></i></a>
                             <a href="#" class="home__social-icon"><i class="fa fa-facebook"></i></a>
                             <a href="#" class="home__social-icon"><i class="fa fa-instagram"></i></a>
+                            <a href="https://wa.me/+2347065910409" class="home__social-icon"><i
+                                    class="fa fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +84,7 @@
             <!--End of Home section-->
 
             <!--About section-->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -148,7 +159,7 @@
                                     <div class="row">
                                         <div class="buttons padd-15">
                                             <a href="#" class="btn about__btn">Download CV</a>
-                                            <a href="#" class="btn about__btn">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me about__btn">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -279,7 +290,8 @@
                                                         Engineer(Intern)</h4>
                                                     <span class="timeline-text">
                                                         <h4>Responsibilities:</h4>
-                                                        <p>Google Andela African Developer Scholarship Program(GAADS2020)</p>
+                                                        <p>Google Andela African Developer Scholarship
+                                                            Program(GAADS2020)</p>
                                                     </span>
                                                 </div>
                                                 <!--End of Timeline Item-->
@@ -313,7 +325,7 @@
             <!--End of About section-->
 
             <!--Service Section-->
-            <section class="service section">
+            <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -391,7 +403,7 @@
             <!--End of Services Section-->
 
             <!--Portfolio Section-->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -505,7 +517,7 @@
             <!--End of Portfolio Section-->
 
             <!--Blog section-->
-            <section class="blog section">
+            <section class="blog section" id="blog">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -593,7 +605,7 @@
                 </div>
             </section>
             <!--End of Blog section-->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -688,18 +700,23 @@
     </div>
     <!--End of Lightbox-->
 
-    <!--LIVE STYLE SWITCHER-->
+    <!--Live Style Switcher-->
     <div class="style-switcher">
         <div class="toggle-style-switcher">
             <i class="fa fa-cog fa-spin"></i>
         </div>
         <h5> Style Switcher</h5>
         <ul>
-            <li><a href="javascript:void(0)" title="pink" style="background: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
-            <li><a href="javascript:void(0)" title="blue" style="background: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
-            <li><a href="javascript:void(0)" title="orange" style="background: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
-            <li><a href="javascript:void(0)" title="yellow" style="background: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
-            <li><a href="javascript:void(0)" title="green" style="background: #72b626;" onclick="setActiveStyle('green')"></a></li>
+            <li><a href="javascript:void(0)" title="pink" style="background: #ec1839;"
+                    onclick="setActiveStyle('pink')"></a></li>
+            <li><a href="javascript:void(0)" title="blue" style="background: #2196f3;"
+                    onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="javascript:void(0)" title="orange" style="background: #fa5b0f;"
+                    onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="javascript:void(0)" title="yellow" style="background: #ffb400;"
+                    onclick="setActiveStyle('yellow')"></a></li>
+            <li><a href="javascript:void(0)" title="green" style="background: #72b626;"
+                    onclick="setActiveStyle('green')"></a></li>
         </ul>
         <h5>Body Skin</h5>
         <label>
@@ -711,22 +728,18 @@
             Dark
         </label>
     </div>
-    <!--END OF LIVE STYLE SWITCHER-->
+    <!--End of live style switcher-->
 
 
 
+<!--===== SCROLL REVEAL JAVASCRIPT=====-->
+<script src="https://unpkg.com/scrollreveal"></script>
 
+<!--PORTFOLIO JAVASCRIPT-->
+<script type="text/javascript" src="js/script.js"></script>
 
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--PORTFOLIO JAVASCRIPT-->
-    <script type="text/javascript" src="js/script.js"></script>
-
-    <!--LIVE STYLE SWITCHER JAVASCRIPT-->
-    <script type="text/javascript" src="js/styleSwitcher.js"></script>
+<!--LIVE STYLE SWITCHER JAVASCRIPT-->
+<script type="text/javascript" src="js/styleSwitcher.js"></script>
 
 </body>
-
 </html>
