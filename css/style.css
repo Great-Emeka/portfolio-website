@@ -39,12 +39,12 @@ select {
   min-height: 100vh;
   display: block;
   padding: 0 30px;
-  position: fixed;
-  left: 270px;
-  top: 0;
+  /* position: fixed;
+  left: 270px; */
+  /* top: 0;
   right: 0;
-  bottom: 0;
-  z-index: 0;
+  bottom: 0;*/
+  z-index: 0; 
   opacity: 1;
   overflow-x: hidden;
   overflow-y: auto;
@@ -63,7 +63,7 @@ select {
   animation: slideSection 1s ease;
 }
 
-@-webkit-keyframes slideSection {
+/* @-webkit-keyframes slideSection {
   0%{
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
@@ -85,7 +85,7 @@ select {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-}
+} */
 
 .section .container {
   padding-top: 60px;
@@ -312,8 +312,8 @@ select {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 0.4s ease;;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span {
@@ -334,8 +334,8 @@ select {
   position: absolute;
   top: -6px;
   left: 0;
-  -webkit-transition: all 0.4s ease;;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
 }
 
 .aside .nav-toggler.open span::before{
@@ -357,8 +357,8 @@ select {
   position: absolute;
   top: 6px;
   left: 0;
-  -webkit-transition: all 0.4s ease;;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
 }
 
 .aside .nav li {
@@ -1238,6 +1238,12 @@ body.dark .shadow-dark{
 
 
 /***********************RESPONSIVENESS****************************/
+@media (min-width: 1200px){
+  .main-content {
+    padding-left: 270px;
+  }
+}
+
 @media (max-width: 1199px){
   .section .container{
     padding-top: 70px;

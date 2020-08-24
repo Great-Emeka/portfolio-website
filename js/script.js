@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
   document.querySelector(".preloader").classList.add("opacity-0");
   setTimeout(() => {
     document.querySelector(".preloader").style.display = "none";
-  }, 1000);
+  },2000);
 });
 
 
@@ -22,7 +22,7 @@ for (let i = 0; i < totalFilterBtn; i++) {
     this.classList.add("active"); //NB: this here is same as filterBtns[i]
 
     const filterValue = this.getAttribute("data-filter");
-    for (let f = 0; f < totalPortfolioItem; f++) {
+    for (let f=0; f<totalPortfolioItem; f++) {
       if (filterValue === portfolioItems[f].getAttribute("data-category")) {
         portfolioItems[f].classList.remove("hide");
         portfolioItems[f].classList.add("show");
@@ -119,7 +119,7 @@ for (let i = 0; i < totalNavList; i++) {
     showSection(this);
 
     if (window.innerWidth < 1200) {
-      asideSectionTogglerBtn();
+      asideTogglerBtn();
     }
   });
 }
@@ -168,15 +168,12 @@ const navTogglerBtn = document.querySelector(".nav-toggler");
 const aside = document.querySelector(".aside");
 
 navTogglerBtn.addEventListener("click", () => {
-  asideSectionTogglerBtn();
+  asideTogglerBtn();
 });
 
-asideSectionTogglerBtn = () => {
+asideTogglerBtn = () => {
   aside.classList.toggle("open");
   navTogglerBtn.classList.toggle("open");
-  for (let i = 0; i < totalSection; i++) {
-    allSection[i].classList.toggle("open");
-  }
 };
 
 /*=========SCROLL REVEAL ANIMATION =====*/
