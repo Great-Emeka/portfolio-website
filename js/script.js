@@ -1,5 +1,6 @@
 /*=========PRELOADING FEATURE =======*/
 window.addEventListener("load", function () {
+  document.body.className = "dark"; //For Default Dark-Skin
   document.querySelector(".preloader").classList.add("opacity-0");
   setTimeout(() => {
     document.querySelector(".preloader").style.display = "none";
