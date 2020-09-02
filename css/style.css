@@ -1242,6 +1242,10 @@ body.dark .shadow-dark{
   .main-content {
     padding-left: 270px;
   }
+
+  .about .about-content .personal-info .buttons{
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 1199px){
