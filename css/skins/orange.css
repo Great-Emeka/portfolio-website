@@ -24,6 +24,7 @@
     color: #fa5b0f;
   }
   
+  .dot.active,
   .blog .blog-item-inner .blog-img .blog-date,
   .service .service-item .service-item-inner:hover .icon,
   .about .about-content .timeline-item::before,
