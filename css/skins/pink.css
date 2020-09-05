@@ -24,6 +24,7 @@ body.dark .aside .nav li a.active,
   color: #ec1839;
 }
 
+.dot.active,
 .blog .blog-item-inner .blog-img .blog-date,
 .service .service-item .service-item-inner:hover .icon,
 .about .about-content .timeline-item::before,
