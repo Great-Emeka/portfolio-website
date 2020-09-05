@@ -214,6 +214,10 @@ sr.reveal(".portfolio-item", { interval: 400 });
 /*SCROLL Blog*/
 sr.reveal(".blog-item", { interval: 200 });
 
+/* Recommendation*/ 
+sr.reveal(".recommendation-text", { interval: 200 });
+sr.reveal(".slideshow-container", { interval: 300 });
+
 /*SCROLL CONTACT*/
 sr.reveal(".contact-info-item", { interval: 300 });
 sr.reveal(".form-group", { interval: 200 });
