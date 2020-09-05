@@ -1,11 +1,9 @@
-
 /******************FONTAWESOME IMPORT********************/
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /****************GOOGLE FONTS*****************/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
-
 
 /*****************GENERAL STYLE**********************/
 body {
@@ -44,19 +42,19 @@ select {
   /* top: 0;
   right: 0;
   bottom: 0;*/
-  z-index: 0; 
+  z-index: 0;
   opacity: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-transition: all 0.4s ease;;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-.section.back-section{
+.section.back-section {
   z-index: 1;
 }
 
-.section.active{
+.section.active {
   opacity: 1;
   z-index: 2;
   -webkit-animation: slideSection 1s ease;
@@ -142,7 +140,6 @@ select {
   padding-left: 15px;
 }
 
-
 /***********MAIN CONTENT RULES****************/
 /* .main-content {
   padding-left: 270px;
@@ -184,7 +181,7 @@ select {
 }
 
 /**********************PRELOADER*****************************/
-.preloader{
+.preloader {
   background: #222222;
   position: fixed;
   left: 0;
@@ -202,44 +199,42 @@ select {
   transition: all 1s ease;
 }
 
-.preloader.opacity-0{
+.preloader.opacity-0 {
   opacity: 0;
 }
 
-.preloader .loader{
+.preloader .loader {
   height: 40px;
   width: 40px;
   border: 4px solid #e3e3e3;
   border-radius: 50%;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  -webkit-animation: spin 2s linear infinite;;
+  -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 
-@-webkit-keyframes spin{
-  0%{
+@-webkit-keyframes spin {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 
-@keyframes spin{
-  0%{
+@keyframes spin {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
-
 
 /**********************ASIDE*****************************/
 .aside {
@@ -253,7 +248,7 @@ select {
   overflow-y: auto;
   border-right: 1px solid#e8dfec;
   padding: 30px;
-  -webkit-transition: all 0.4s ease;;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 .aside .logo {
@@ -312,7 +307,7 @@ select {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 0.3s ease;;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -334,18 +329,18 @@ select {
   position: absolute;
   top: -6px;
   left: 0;
-  -webkit-transition: all 0.3s ease;;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.aside .nav-toggler.open span::before{
-  -webkit-transform:rotate(45deg);
+.aside .nav-toggler.open span::before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 0px;
 }
 
-.aside .nav-toggler.open span::after{
-  -webkit-transform:rotate(-45deg);
+.aside .nav-toggler.open span::after {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 0px;
 }
@@ -357,7 +352,7 @@ select {
   position: absolute;
   top: 6px;
   left: 0;
-  -webkit-transition: all 0.3s ease;;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -449,7 +444,6 @@ select {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 /*******************ABOUT SECTION**********************/
 .about .about-content {
@@ -723,7 +717,6 @@ select {
   margin: 0;
 }
 
-
 /****************PORTFOLIO SECTION*********************/
 .portfolio .container {
   padding-bottom: 40px;
@@ -872,7 +865,6 @@ select {
   line-height: 40px;
 }
 
-
 /****************LIGHTBOX RULES*********************/
 .lightbox {
   position: fixed;
@@ -1008,7 +1000,6 @@ select {
   line-height: 40px;
 }
 
-
 /***************BLOG SECTION**********************/
 .blog .container {
   padding-bottom: 40px;
@@ -1089,9 +1080,8 @@ select {
   font-weight: 600;
 }
 
-
 /**************RECOMMENDATION SECTION********************/
-.recommendation .container .recommendation-text p{
+.recommendation .container .recommendation-text p {
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
@@ -1129,7 +1119,7 @@ select {
   top: 0;
 }
 
-.recommendation .container .recommendation-sliders .mySlides img{
+.recommendation .container .recommendation-sliders .mySlides img {
   -webkit-box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
   box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
 }
@@ -1145,7 +1135,6 @@ select {
   transition: background-color 0.6s ease;
 }
 
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -1155,17 +1144,22 @@ select {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-
-
 
 /**************CONTACT SECTION********************/
 .contact .contact-info-item {
@@ -1249,10 +1243,9 @@ select {
   padding: 0 50px;
 }
 
-
 /*****************DARK BODY SKIN*************************/
 
-body.dark .section{
+body.dark .section {
   background: #151515;
 }
 
@@ -1260,7 +1253,7 @@ body.dark .contact-form .form-item .form-control,
 body.dark .blog .blog-item-inner .blog-info,
 body.dark .service-item .service-item-inner,
 body.dark .about .about-content .timeline,
-body.dark .aside{
+body.dark .aside {
   background: #222222;
 }
 
@@ -1278,7 +1271,7 @@ body.dark .about .about-content .about-text h3,
 body.dark .section-title h2,
 body.dark .home .intro h1,
 body.dark .aside .logo a,
-body.dark .aside .nav li a{
+body.dark .aside .nav li a {
   color: #ffffff;
 }
 
@@ -1294,7 +1287,7 @@ body.dark .about .about-content .timeline .timeline-date,
 body.dark .about-content .skills .skill-item .skill-percent,
 body.dark .about-content .personal-info .info-item p span,
 body.dark .about .about-content .about-text p,
-body.dark .home .intro p{
+body.dark .home .intro p {
   color: #e9e9e9;
 }
 
@@ -1305,68 +1298,67 @@ body.dark .portfolio .portfolio-item-inner,
 body.dark .service-item .service-item-inner,
 body.dark .about .about-content .timeline,
 body.dark .about-content .personal-info .info-item p,
-body.dark .aside .nav li a{
+body.dark .aside .nav li a {
   border-color: #393939;
 }
 
-body.dark .shadow-dark{
+body.dark .shadow-dark {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-
 /***********************RESPONSIVENESS****************************/
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .main-content {
     padding-left: 270px;
   }
 
-  .about .about-content .personal-info .buttons{
+  .about .about-content .personal-info .buttons {
     margin-top: 60px;
   }
 }
 
-@media (max-width: 1199px){
-  .section .container{
+@media (max-width: 1199px) {
+  .section .container {
     padding-top: 70px;
   }
 
-  .aside .nav-toggler{
+  .aside .nav-toggler {
     display: -ms-flexbox;
     display: flex;
     left: 30px;
   }
 
-  .aside .nav-toggler.open{
+  .aside .nav-toggler.open {
     left: 270px;
   }
 
-  .aside{
+  .aside {
     left: -270px;
   }
 
-  .aside.open{
+  .aside.open {
     left: 0px;
   }
 
-  .section{
+  .section {
     left: 0;
   }
 
-  .section.open{
+  .section.open {
     left: 270px;
   }
 
-  .about .about-content .personal-info .info-item span{
+  .about .about-content .personal-info .info-item span {
     display: block;
     margin-left: 0;
   }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .blog .blog-item,
   .portfolio .portfolio-item,
-  .service .service-item{
+  .service .service-item {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
@@ -1374,7 +1366,7 @@ body.dark .shadow-dark{
 }
 
 /* For Smaller screens */
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .contact .contact-info-item,
   .contact .contact-form .col-6,
   .blog .blog-item,
@@ -1382,17 +1374,17 @@ body.dark .shadow-dark{
   .about .about-content .education,
   .about .about-content .experience,
   .about .about-content .skills,
-  .about .about-content .personal-info{
+  .about .about-content .personal-info {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .portfolio .portfolio-filter button{
+  .portfolio .portfolio-filter button {
     margin-bottom: 15px;
   }
-  
-  .about .about-content .personal-info .buttons .btn{
+
+  .about .about-content .personal-info .buttons .btn {
     margin-right: 5px;
     font-size: 15px;
     font-weight: 500;
@@ -1401,7 +1393,7 @@ body.dark .shadow-dark{
 
   .section-title h2 {
     font-size: 30px;
-}
+  }
 
   .recommendation .container .mySlides .numbertext {
     color: #f2f2f2;
@@ -1412,30 +1404,29 @@ body.dark .shadow-dark{
     top: 0;
   }
 
-  .recommendation .container .recommendation-sliders .mySlides img{
+  .recommendation .container .recommendation-sliders .mySlides img {
     min-height: 230px;
   }
-  .recommendation .container .recommendation-sliders{
+  .recommendation .container .recommendation-sliders {
     padding-bottom: 0px;
     margin-bottom: 0;
   }
-
 }
 
-@media (max-width: 575px){
-    .contact .contact-info-item,
-    .portfolio .portfolio-item{
+@media (max-width: 575px) {
+  .contact .contact-info-item,
+  .portfolio .portfolio-item {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .about .about-content .personal-info .info-item span{
+  .about .about-content .personal-info .info-item span {
     /* display: inline-block; */
     font-size: 2.7vw;
   }
 
-  .home .intro h1{
+  .home .intro h1 {
     font-size: 25px;
   }
 }
