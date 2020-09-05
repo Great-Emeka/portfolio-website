@@ -1149,9 +1149,9 @@ select {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.8s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.8s;
 }
 
 @-webkit-keyframes fade {
@@ -1406,6 +1406,7 @@ body.dark .shadow-dark{
   .recommendation .container .mySlides .numbertext {
     color: #f2f2f2;
     font-size: 12px;
+    font-weight: 600;
     padding: 1px 12px;
     position: absolute;
     top: 0;
