@@ -222,3 +222,45 @@ sr.reveal(".slideshow-container", { interval: 300 });
 sr.reveal(".contact-info-item", { interval: 300 });
 sr.reveal(".form-group", { interval: 200 });
 sr.reveal(".message__btn", { delay: 500 });
+
+
+
+
+//ANIMATED TEXT
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.my_title1');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.my_title1 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.my_title1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  //For second letter
+  var textWrapper = document.querySelector('.title2 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.title2 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 2400,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.title2',
+    opacity: 0,
+    duration: 800,
+    easing: "easeOutExpo",
+    delay: 800
+  });

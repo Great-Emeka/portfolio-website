@@ -426,6 +426,19 @@ select {
   margin-top: 25px;
 }
 
+/* moving text */
+
+.title2 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.title2 .letter {
+  display: inline-block;
+  line-height: 25px;
+}
+
 .home .intro .social-links a {
   height: 35px;
   width: 35px;
@@ -453,7 +466,7 @@ select {
 
 .home .container .arrow {
   text-align: center;
-  margin: 20% 0 0 0;
+  margin: 23% 0 0 0;
 }
 
 .home .container .bounce {
@@ -1416,7 +1429,7 @@ body.dark .shadow-dark {
 
   .home .container .arrow {
     text-align: center;
-    margin: 25% 0 0 0;
+    margin: 27% 0 0 0;
   }
 
   .portfolio .portfolio-filter button {
