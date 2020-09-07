@@ -8,6 +8,7 @@
   border-bottom: 4px solid #ec1839;
 }
 
+.home .container a,
 .contact .contact-info-item .icon .fa,
 .blog .blog-item-inner .blog-info .blog-tags a,
 .lightbox .lightbox-controls .prev-item .fa,
@@ -20,7 +21,7 @@ body.dark .portfolio .portfolio-filter button.active,
 .aside .nav li a:hover,
 body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
-.aside .nav li a.active{
+.aside .nav li a.active {
   color: #ec1839;
 }
 
@@ -40,6 +41,6 @@ body.dark .aside .nav li a.active,
   background: #ec1839;
 }
 
-.portfolio .portfolio-filter button.active{
+.portfolio .portfolio-filter button.active {
   border-color: #ec1839;
 }

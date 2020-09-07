@@ -24,6 +24,7 @@
     color: #ffb400;
   }
   
+  .home .container a,
   .dot.active,
   .blog .blog-item-inner .blog-img .blog-date,
   .service .service-item .service-item-inner:hover .icon,
