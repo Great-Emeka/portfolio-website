@@ -21,7 +21,7 @@ body.dark .portfolio .portfolio-filter button.active,
 .aside .nav li a:hover,
 body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
-.aside .nav li a.active{
+.aside .nav li a.active {
   color: #ec1839;
 }
 
@@ -41,6 +41,6 @@ body.dark .aside .nav li a.active,
   background: #ec1839;
 }
 
-.portfolio .portfolio-filter button.active{
+.portfolio .portfolio-filter button.active {
   border-color: #ec1839;
 }
