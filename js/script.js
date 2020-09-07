@@ -245,3 +245,22 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+  //For second letter
+  var textWrapper = document.querySelector('.title2 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.title2 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 2400,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.title2',
+    opacity: 0,
+    duration: 800,
+    easing: "easeOutExpo",
+    delay: 800
+  });

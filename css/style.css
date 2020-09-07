@@ -426,6 +426,19 @@ select {
   margin-top: 25px;
 }
 
+/* moving text */
+
+.title2 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.title2 .letter {
+  display: inline-block;
+  line-height: 25px;
+}
+
 .home .intro .social-links a {
   height: 35px;
   width: 35px;
