@@ -398,10 +398,6 @@ select {
   text-align: center;
 }
 
-/* Scrolling texts */
-/* .home .container .intro .my_title2  */
-
-
 .home .intro img {
   height: 200px;
   width: 200px;
@@ -457,7 +453,7 @@ select {
 
 .home .container .arrow {
   text-align: center;
-  margin: 20% 0 0 0;
+  margin: 23% 0 0 0;
 }
 
 .home .container .bounce {
@@ -1420,7 +1416,7 @@ body.dark .shadow-dark {
 
   .home .container .arrow {
     text-align: center;
-    margin: 25% 0 0 0;
+    margin: 27% 0 0 0;
   }
 
   .portfolio .portfolio-filter button {
