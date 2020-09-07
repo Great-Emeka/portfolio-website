@@ -8,6 +8,7 @@
     border-bottom: 4px solid #fa5b0f;
   }
   
+  .home .container a,
   .contact .contact-info-item .icon .fa,
   .blog .blog-item-inner .blog-info .blog-tags a,
   .lightbox .lightbox-controls .prev-item .fa,
@@ -24,7 +25,6 @@
     color: #fa5b0f;
   }
   
-  .home .container a,
   .dot.active,
   .blog .blog-item-inner .blog-img .blog-date,
   .service .service-item .service-item-inner:hover .icon,
