@@ -63,7 +63,7 @@ self.addEventListener('fetch', (evt) => {
           .catch(() => {
             return caches.open(CACHE_NAME)
                 .then((cache) => {
-                  return cache.match('/'); //You can make ofline.html page and put there
+                  return cache.match('/images/about.png'); //You can make ofline.html page and put there
                 });
           })
   );
