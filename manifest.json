@@ -1,0 +1,32 @@
+{
+  "short_name": "Great Emeka",
+  "name": "Great's Portfolio",
+  "lang": "en",
+  "description": "Great Emeka A Frontend Engineer & an aspiring Full Stack | A Digital marketer |serial Technical writer",
+  "background_color": "#222222",
+  "theme_color": "#fdf9ff",
+  "dir": "ltr",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "scope": "/",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "../images/pwa-icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "../images/pwa-icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "../images/pwa-icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "prefer_related_applications": false
+}
