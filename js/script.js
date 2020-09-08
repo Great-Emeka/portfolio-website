@@ -1,10 +1,12 @@
+//For Default Dark-Skin
+document.body.className = "dark";
+
 /*=========PRELOADING FEATURE =======*/
 window.addEventListener("load", function () {
-  document.body.className = "dark"; //For Default Dark-Skin
   document.querySelector(".preloader").classList.add("opacity-0");
   setTimeout(() => {
     document.querySelector(".preloader").style.display = "none";
-  },2000);
+  },1000);
 });
 
 
