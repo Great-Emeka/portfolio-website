@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Manifest-->
     <link rel="manifest" href="manifest.json" />
+
+    <!-- For iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Great's Portfolio">
+    <link rel="apple-touch-icon" href="/images/pwa-icons/icon-512.png">
+    
     <link rel="icon" href="../images/about.png" type="image/ico" sizes="16x16" />
     <title>Great Emeka</title>
 
+    <!-- meta theme-color -->
+    <meta name="theme-color" content="#fdf9ff" />
     <!--SEO-->
-    <meta name="description"
-        content="Great Emeka A Frontend Engineer & an aspiring Full Stack | A Digital marketer |serial Technical writer" />
+    <meta name="description" content="Great Emeka A Frontend Engineer & an aspiring Full Stack | A Digital marketer |serial Technical writer" />
     <meta property="og:title" content="About Great Emeka" />
     <meta property="og:url" content="https://greatemeka.tech" />
     <meta property="og:site_name" content="Great Emeka" />
@@ -201,7 +209,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="./cv/Chimezie, Emeka Great's Resume.pdf" class="btn about__btn"
+                                            <a href="./cv/Chimezie-Emeka-Great-Resume.pdf" class="btn about__btn"
                                                 download="Great's Resume">Download CV</a>
                                             <a href="#contact" data-section-index="1"
                                                 class="btn hire-me about__btn">Hire Me</a>
@@ -885,6 +893,19 @@
 
     <!--PORTFOLIO JAVASCRIPT-->
     <script type="text/javascript" src="js/script.js"></script>
+
+    <!--REGISTER SERVICE  WORKER-->
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/serviceWorker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        }
+        </script>
 
     <!--LIVE STYLE SWITCHER JAVASCRIPT-->
     <script type="text/javascript" src="js/styleSwitcher.js"></script>
