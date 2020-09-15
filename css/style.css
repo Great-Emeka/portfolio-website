@@ -895,10 +895,17 @@ select {
   opacity: 0;
 }
 
+.portfolio .portfolio-item .portfolio-info a.row2-links{
+  position: absolute;
+  right: 90px;
+  bottom: 100px;
+}
+
 .portfolio .portfolio-item-inner:hover .portfolio-info a{
   opacity: 1;
   border: 1px solid #ec1839;
-  padding: 5px;
+  padding: 2px 5px;
+  color: #ec1839;
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
 }
