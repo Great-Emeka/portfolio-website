@@ -211,7 +211,7 @@ sr.reveal(".skills__img", { delay: 600 });
 
 /*SCROLL PORTFOLIO*/
 sr.reveal(".portfoilio__filter", { interval: 200 });
-sr.reveal(".portfolio-item", { delay: 50 });
+// sr.reveal(".portfolio-item", { delay: 50 });
 
 /*SCROLL Blog*/
 sr.reveal(".blog-item", { interval: 200 });
