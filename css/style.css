@@ -847,6 +847,7 @@ select {
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
+  /* height: 100%; */
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -877,6 +878,29 @@ select {
   -webkit-transform: translateX(-20px);
   transform: translateX(-20px);
   opacity: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info a{
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  right: 90px;
+  bottom: 175px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.portfolio .portfolio-item-inner:hover .portfolio-info a{
+  opacity: 1;
+  border: 1px solid #ec1839;
+  padding: 5px;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 .portfolio .portfolio-item-inner:hover .portfolio-info h4 {
