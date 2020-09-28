@@ -399,8 +399,8 @@ select {
 }
 
 .home .intro img {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 280px;
   border-radius: 50%;
   display: inline-block;
   border: 8px solid #ffffff;
@@ -466,7 +466,7 @@ select {
 
 .home .container .arrow {
   text-align: center;
-  margin: 23% 0 0 0;
+  margin: 15% 0 0 0;
 }
 
 .home .container .bounce {
@@ -1460,7 +1460,7 @@ body.dark .shadow-dark {
 
   .home .container .arrow {
     text-align: center;
-    margin: 27% 0 0 0;
+    margin: 29% 0 0 0;
   }
 
   .portfolio .portfolio-filter button {
