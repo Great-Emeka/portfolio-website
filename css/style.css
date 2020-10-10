@@ -245,7 +245,7 @@ select {
   left: 0;
   top: 0;
   z-index: 10;
-  overflow-y: auto;
+  overflow-y: hidden;
   border-right: 1px solid#e8dfec;
   padding: 30px;
   -webkit-transition: all 0.4s ease;
@@ -1387,6 +1387,62 @@ body.dark .shadow-dark {
 
 /***********************RESPONSIVENESS****************************/
 @media (min-width: 1200px) {
+
+/*Uncomment this if you want side flipping on desktops*/
+
+ /* .section {
+  background-color: #f2f2fc;
+  min-height: 100vh;
+  display: block;
+  padding: 0 30px;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: all 0.4s ease;;
+  transition: all 0.4s ease;
+}
+
+.section.back-section{
+  z-index: 1;
+}
+
+.section.active{
+  opacity: 1;
+  z-index: 2;
+  -webkit-animation: slideSection 1s ease;
+  animation: slideSection 1s ease;
+}
+
+@-webkit-keyframes slideSection {
+  0%{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideSection {
+  0%{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}*/
+
   .main-content {
     padding-left: 270px;
   }
@@ -1443,7 +1499,7 @@ body.dark .shadow-dark {
   }
 }
 
-/* For Smaller screens */
+/* For Mobile screens */
 @media (max-width: 767px) {
   .contact .contact-info-item,
   .contact .contact-form .col-6,
@@ -1511,5 +1567,17 @@ body.dark .shadow-dark {
 
   .home .intro h1 {
     font-size: 25px;
+  }
+}
+
+@media only screen and (max-width:600) and (min-width: 400){
+  .home .intro img {
+    height: 250px;
+    width: 230px;
+  }
+
+  .home .intro h1 {
+    font-size: 25px;
+    margin: 15px 0px;
   }
 }
